@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90714160245DCC61008D5294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071415F245DCC61008D5294 /* AppDelegate.swift */; };
+		90714162245DCC61008D5294 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714161245DCC61008D5294 /* ContentView.swift */; };
+		90714164245DCC62008D5294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90714163245DCC62008D5294 /* Assets.xcassets */; };
+		90714167245DCC62008D5294 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90714166245DCC62008D5294 /* Preview Assets.xcassets */; };
+		9071416A245DCC62008D5294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90714168245DCC62008D5294 /* Main.storyboard */; };
+		90714176245DCC62008D5294 /* EasyShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714175245DCC62008D5294 /* EasyShareTests.swift */; };
+		90714181245DCC62008D5294 /* EasyShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714180245DCC62008D5294 /* EasyShareUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		90714172245DCC62008D5294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90714154245DCC61008D5294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9071415B245DCC61008D5294;
+			remoteInfo = EasyShare;
+		};
+		9071417D245DCC62008D5294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90714154245DCC61008D5294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9071415B245DCC61008D5294;
+			remoteInfo = EasyShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9071415C245DCC61008D5294 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9071415F245DCC61008D5294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90714161245DCC61008D5294 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		90714163245DCC62008D5294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90714166245DCC62008D5294 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		90714169245DCC62008D5294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9071416B245DCC62008D5294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9071416C245DCC62008D5294 /* EasyShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EasyShare.entitlements; sourceTree = "<group>"; };
+		90714171245DCC62008D5294 /* EasyShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90714175245DCC62008D5294 /* EasyShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyShareTests.swift; sourceTree = "<group>"; };
+		90714177245DCC62008D5294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9071417C245DCC62008D5294 /* EasyShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90714180245DCC62008D5294 /* EasyShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyShareUITests.swift; sourceTree = "<group>"; };
+		90714182245DCC62008D5294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90714159245DCC61008D5294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9071416E245DCC62008D5294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90714179245DCC62008D5294 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90714153245DCC61008D5294 = {
+			isa = PBXGroup;
+			children = (
+				9071415E245DCC61008D5294 /* EasyShare */,
+				90714174245DCC62008D5294 /* EasyShareTests */,
+				9071417F245DCC62008D5294 /* EasyShareUITests */,
+				9071415D245DCC61008D5294 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9071415D245DCC61008D5294 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9071415C245DCC61008D5294 /* EasyShare.app */,
+				90714171245DCC62008D5294 /* EasyShareTests.xctest */,
+				9071417C245DCC62008D5294 /* EasyShareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9071415E245DCC61008D5294 /* EasyShare */ = {
+			isa = PBXGroup;
+			children = (
+				9071415F245DCC61008D5294 /* AppDelegate.swift */,
+				90714161245DCC61008D5294 /* ContentView.swift */,
+				90714163245DCC62008D5294 /* Assets.xcassets */,
+				90714168245DCC62008D5294 /* Main.storyboard */,
+				9071416B245DCC62008D5294 /* Info.plist */,
+				9071416C245DCC62008D5294 /* EasyShare.entitlements */,
+				90714165245DCC62008D5294 /* Preview Content */,
+			);
+			path = EasyShare;
+			sourceTree = "<group>";
+		};
+		90714165245DCC62008D5294 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				90714166245DCC62008D5294 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		90714174245DCC62008D5294 /* EasyShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				90714175245DCC62008D5294 /* EasyShareTests.swift */,
+				90714177245DCC62008D5294 /* Info.plist */,
+			);
+			path = EasyShareTests;
+			sourceTree = "<group>";
+		};
+		9071417F245DCC62008D5294 /* EasyShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90714180245DCC62008D5294 /* EasyShareUITests.swift */,
+				90714182245DCC62008D5294 /* Info.plist */,
+			);
+			path = EasyShareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9071415B245DCC61008D5294 /* EasyShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90714185245DCC62008D5294 /* Build configuration list for PBXNativeTarget "EasyShare" */;
+			buildPhases = (
+				90714158245DCC61008D5294 /* Sources */,
+				90714159245DCC61008D5294 /* Frameworks */,
+				9071415A245DCC61008D5294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyShare;
+			productName = EasyShare;
+			productReference = 9071415C245DCC61008D5294 /* EasyShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		90714170245DCC62008D5294 /* EasyShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90714188245DCC62008D5294 /* Build configuration list for PBXNativeTarget "EasyShareTests" */;
+			buildPhases = (
+				9071416D245DCC62008D5294 /* Sources */,
+				9071416E245DCC62008D5294 /* Frameworks */,
+				9071416F245DCC62008D5294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90714173245DCC62008D5294 /* PBXTargetDependency */,
+			);
+			name = EasyShareTests;
+			productName = EasyShareTests;
+			productReference = 90714171245DCC62008D5294 /* EasyShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9071417B245DCC62008D5294 /* EasyShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9071418B245DCC62008D5294 /* Build configuration list for PBXNativeTarget "EasyShareUITests" */;
+			buildPhases = (
+				90714178245DCC62008D5294 /* Sources */,
+				90714179245DCC62008D5294 /* Frameworks */,
+				9071417A245DCC62008D5294 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9071417E245DCC62008D5294 /* PBXTargetDependency */,
+			);
+			name = EasyShareUITests;
+			productName = EasyShareUITests;
+			productReference = 9071417C245DCC62008D5294 /* EasyShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90714154245DCC61008D5294 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Michael Lee";
+				TargetAttributes = {
+					9071415B245DCC61008D5294 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					90714170245DCC62008D5294 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 9071415B245DCC61008D5294;
+					};
+					9071417B245DCC62008D5294 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 9071415B245DCC61008D5294;
+					};
+				};
+			};
+			buildConfigurationList = 90714157245DCC61008D5294 /* Build configuration list for PBXProject "EasyShare" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90714153245DCC61008D5294;
+			productRefGroup = 9071415D245DCC61008D5294 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9071415B245DCC61008D5294 /* EasyShare */,
+				90714170245DCC62008D5294 /* EasyShareTests */,
+				9071417B245DCC62008D5294 /* EasyShareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9071415A245DCC61008D5294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9071416A245DCC62008D5294 /* Main.storyboard in Resources */,
+				90714167245DCC62008D5294 /* Preview Assets.xcassets in Resources */,
+				90714164245DCC62008D5294 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9071416F245DCC62008D5294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9071417A245DCC62008D5294 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90714158245DCC61008D5294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90714162245DCC61008D5294 /* ContentView.swift in Sources */,
+				90714160245DCC61008D5294 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9071416D245DCC62008D5294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90714176245DCC62008D5294 /* EasyShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90714178245DCC62008D5294 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90714181245DCC62008D5294 /* EasyShareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90714173245DCC62008D5294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9071415B245DCC61008D5294 /* EasyShare */;
+			targetProxy = 90714172245DCC62008D5294 /* PBXContainerItemProxy */;
+		};
+		9071417E245DCC62008D5294 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9071415B245DCC61008D5294 /* EasyShare */;
+			targetProxy = 9071417D245DCC62008D5294 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		90714168245DCC62008D5294 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90714169245DCC62008D5294 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90714183245DCC62008D5294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		90714184245DCC62008D5294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		90714186245DCC62008D5294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EasyShare/EasyShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"EasyShare/Preview Content\"";
+				DEVELOPMENT_TEAM = 5PYBGZXB6L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EasyShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90714187245DCC62008D5294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EasyShare/EasyShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"EasyShare/Preview Content\"";
+				DEVELOPMENT_TEAM = 5PYBGZXB6L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EasyShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		90714189245DCC62008D5294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5PYBGZXB6L;
+				INFOPLIST_FILE = EasyShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyShare.app/Contents/MacOS/EasyShare";
+			};
+			name = Debug;
+		};
+		9071418A245DCC62008D5294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5PYBGZXB6L;
+				INFOPLIST_FILE = EasyShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasyShare.app/Contents/MacOS/EasyShare";
+			};
+			name = Release;
+		};
+		9071418C245DCC62008D5294 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5PYBGZXB6L;
+				INFOPLIST_FILE = EasyShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = EasyShare;
+			};
+			name = Debug;
+		};
+		9071418D245DCC62008D5294 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5PYBGZXB6L;
+				INFOPLIST_FILE = EasyShareUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = EasyShare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90714157245DCC61008D5294 /* Build configuration list for PBXProject "EasyShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90714183245DCC62008D5294 /* Debug */,
+				90714184245DCC62008D5294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90714185245DCC62008D5294 /* Build configuration list for PBXNativeTarget "EasyShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90714186245DCC62008D5294 /* Debug */,
+				90714187245DCC62008D5294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90714188245DCC62008D5294 /* Build configuration list for PBXNativeTarget "EasyShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90714189245DCC62008D5294 /* Debug */,
+				9071418A245DCC62008D5294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9071418B245DCC62008D5294 /* Build configuration list for PBXNativeTarget "EasyShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9071418C245DCC62008D5294 /* Debug */,
+				9071418D245DCC62008D5294 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90714154245DCC61008D5294 /* Project object */;
+}
