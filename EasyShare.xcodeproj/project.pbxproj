@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		906B7534245DF6AE00662E03 /* PerfectHTTPServer in Frameworks */ = {isa = PBXBuildFile; productRef = 906B7533245DF6AE00662E03 /* PerfectHTTPServer */; };
 		90714160245DCC61008D5294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071415F245DCC61008D5294 /* AppDelegate.swift */; };
 		90714162245DCC61008D5294 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714161245DCC61008D5294 /* ContentView.swift */; };
 		90714164245DCC62008D5294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90714163245DCC62008D5294 /* Assets.xcassets */; };
@@ -14,6 +15,13 @@
 		9071416A245DCC62008D5294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90714168245DCC62008D5294 /* Main.storyboard */; };
 		90714176245DCC62008D5294 /* EasyShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714175245DCC62008D5294 /* EasyShareTests.swift */; };
 		90714181245DCC62008D5294 /* EasyShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714180245DCC62008D5294 /* EasyShareUITests.swift */; };
+		9096CC71245F14D700AC750B /* SQLiteStORM in Frameworks */ = {isa = PBXBuildFile; productRef = 9096CC70245F14D700AC750B /* SQLiteStORM */; };
+		9096CC78245F18A400AC750B /* ConfigDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC77245F18A400AC750B /* ConfigDTO.swift */; };
+		9096CC7A245F18B700AC750B /* ShareDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC79245F18B700AC750B /* ShareDTO.swift */; };
+		9096CC81245F21D700AC750B /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC80245F21D700AC750B /* DbHelper.swift */; };
+		9096CC83245F303800AC750B /* ConfigMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC82245F303800AC750B /* ConfigMap.swift */; };
+		9096CC86245F39BE00AC750B /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC85245F39BE00AC750B /* DataUtils.swift */; };
+		9099747A245DDF6900931C1F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90997479245DDF6900931C1F /* Server.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,12 @@
 		9071417C245DCC62008D5294 /* EasyShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90714180245DCC62008D5294 /* EasyShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyShareUITests.swift; sourceTree = "<group>"; };
 		90714182245DCC62008D5294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9096CC77245F18A400AC750B /* ConfigDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDTO.swift; sourceTree = "<group>"; };
+		9096CC79245F18B700AC750B /* ShareDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDTO.swift; sourceTree = "<group>"; };
+		9096CC80245F21D700AC750B /* DbHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
+		9096CC82245F303800AC750B /* ConfigMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigMap.swift; sourceTree = "<group>"; };
+		9096CC85245F39BE00AC750B /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
+		90997479245DDF6900931C1F /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9096CC71245F14D700AC750B /* SQLiteStORM in Frameworks */,
+				906B7534245DF6AE00662E03 /* PerfectHTTPServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +114,9 @@
 		9071415E245DCC61008D5294 /* EasyShare */ = {
 			isa = PBXGroup;
 			children = (
+				9096CC84245F39AD00AC750B /* utils */,
+				9096CC72245F17AC00AC750B /* model */,
+				90997478245DDF5C00931C1F /* server */,
 				9071415F245DCC61008D5294 /* AppDelegate.swift */,
 				90714161245DCC61008D5294 /* ContentView.swift */,
 				90714163245DCC62008D5294 /* Assets.xcassets */,
@@ -135,6 +154,49 @@
 			path = EasyShareUITests;
 			sourceTree = "<group>";
 		};
+		9096CC72245F17AC00AC750B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9096CC73245F17C100AC750B /* db */,
+				9096CC82245F303800AC750B /* ConfigMap.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9096CC73245F17C100AC750B /* db */ = {
+			isa = PBXGroup;
+			children = (
+				9096CC76245F188C00AC750B /* dto */,
+				9096CC80245F21D700AC750B /* DbHelper.swift */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		9096CC76245F188C00AC750B /* dto */ = {
+			isa = PBXGroup;
+			children = (
+				9096CC77245F18A400AC750B /* ConfigDTO.swift */,
+				9096CC79245F18B700AC750B /* ShareDTO.swift */,
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		9096CC84245F39AD00AC750B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				9096CC85245F39BE00AC750B /* DataUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		90997478245DDF5C00931C1F /* server */ = {
+			isa = PBXGroup;
+			children = (
+				90997479245DDF6900931C1F /* Server.swift */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +213,10 @@
 			dependencies = (
 			);
 			name = EasyShare;
+			packageProductDependencies = (
+				906B7533245DF6AE00662E03 /* PerfectHTTPServer */,
+				9096CC70245F14D700AC750B /* SQLiteStORM */,
+			);
 			productName = EasyShare;
 			productReference = 9071415C245DCC61008D5294 /* EasyShare.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +289,10 @@
 				Base,
 			);
 			mainGroup = 90714153245DCC61008D5294;
+			packageReferences = (
+				906B7532245DF6AE00662E03 /* XCRemoteSwiftPackageReference "Perfect-HTTPServer" */,
+				9096CC6F245F14D700AC750B /* XCRemoteSwiftPackageReference "SQLite-StORM" */,
+			);
 			productRefGroup = 9071415D245DCC61008D5294 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,7 +337,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				90714162245DCC61008D5294 /* ContentView.swift in Sources */,
+				9099747A245DDF6900931C1F /* Server.swift in Sources */,
+				9096CC83245F303800AC750B /* ConfigMap.swift in Sources */,
+				9096CC7A245F18B700AC750B /* ShareDTO.swift in Sources */,
 				90714160245DCC61008D5294 /* AppDelegate.swift in Sources */,
+				9096CC86245F39BE00AC750B /* DataUtils.swift in Sources */,
+				9096CC78245F18A400AC750B /* ConfigDTO.swift in Sources */,
+				9096CC81245F21D700AC750B /* DbHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +673,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		906B7532245DF6AE00662E03 /* XCRemoteSwiftPackageReference "Perfect-HTTPServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PerfectlySoft/Perfect-HTTPServer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.23;
+			};
+		};
+		9096CC6F245F14D700AC750B /* XCRemoteSwiftPackageReference "SQLite-StORM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftORM/SQLite-StORM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		906B7533245DF6AE00662E03 /* PerfectHTTPServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 906B7532245DF6AE00662E03 /* XCRemoteSwiftPackageReference "Perfect-HTTPServer" */;
+			productName = PerfectHTTPServer;
+		};
+		9096CC70245F14D700AC750B /* SQLiteStORM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9096CC6F245F14D700AC750B /* XCRemoteSwiftPackageReference "SQLite-StORM" */;
+			productName = SQLiteStORM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90714154245DCC61008D5294 /* Project object */;
 }
