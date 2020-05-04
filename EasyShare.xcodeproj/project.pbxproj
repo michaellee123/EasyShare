@@ -15,13 +15,26 @@
 		9071416A245DCC62008D5294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90714168245DCC62008D5294 /* Main.storyboard */; };
 		90714176245DCC62008D5294 /* EasyShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714175245DCC62008D5294 /* EasyShareTests.swift */; };
 		90714181245DCC62008D5294 /* EasyShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714180245DCC62008D5294 /* EasyShareUITests.swift */; };
+		907B97EC24605F7A00F38E15 /* ShareServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90997479245DDF6900931C1F /* ShareServer.swift */; };
 		9096CC71245F14D700AC750B /* SQLiteStORM in Frameworks */ = {isa = PBXBuildFile; productRef = 9096CC70245F14D700AC750B /* SQLiteStORM */; };
 		9096CC78245F18A400AC750B /* ConfigDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC77245F18A400AC750B /* ConfigDTO.swift */; };
 		9096CC7A245F18B700AC750B /* ShareDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC79245F18B700AC750B /* ShareDTO.swift */; };
 		9096CC81245F21D700AC750B /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC80245F21D700AC750B /* DbHelper.swift */; };
-		9096CC83245F303800AC750B /* ConfigMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC82245F303800AC750B /* ConfigMap.swift */; };
 		9096CC86245F39BE00AC750B /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC85245F39BE00AC750B /* DataUtils.swift */; };
-		9099747A245DDF6900931C1F /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90997479245DDF6900931C1F /* Server.swift */; };
+		90C7A7492460014000F7369C /* ConfigMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC82245F303800AC750B /* ConfigMap.swift */; };
+		90C7A76D2460125100F7369C /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7A76C2460125100F7369C /* DragView.swift */; };
+		90C7A79624605D7300F7369C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 90C7A79524605D7300F7369C /* icon.icns */; };
+		90C7A79824605D7300F7369C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7A79724605D7300F7369C /* ShareViewController.swift */; };
+		90C7A79B24605D7300F7369C /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C7A79924605D7300F7369C /* ShareViewController.xib */; };
+		90C7A7A024605D7300F7369C /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 90C7A79324605D7300F7369C /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90C7A7A424605D7F00F7369C /* ShareServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90997479245DDF6900931C1F /* ShareServer.swift */; };
+		90C7A7AA24605E2600F7369C /* PerfectHTTPServer in Frameworks */ = {isa = PBXBuildFile; productRef = 90C7A7A924605E2600F7369C /* PerfectHTTPServer */; };
+		90C7A7AC24605E2600F7369C /* SQLiteStORM in Frameworks */ = {isa = PBXBuildFile; productRef = 90C7A7AB24605E2600F7369C /* SQLiteStORM */; };
+		90C7A7AD24605E5500F7369C /* ConfigDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC77245F18A400AC750B /* ConfigDTO.swift */; };
+		90C7A7AE24605E5500F7369C /* ShareDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC79245F18B700AC750B /* ShareDTO.swift */; };
+		90C7A7AF24605E5500F7369C /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC80245F21D700AC750B /* DbHelper.swift */; };
+		90C7A7B024605E5500F7369C /* ConfigMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC82245F303800AC750B /* ConfigMap.swift */; };
+		90C7A7B124605E5500F7369C /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC85245F39BE00AC750B /* DataUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +52,38 @@
 			remoteGlobalIDString = 9071415B245DCC61008D5294;
 			remoteInfo = EasyShare;
 		};
+		90C7A79E24605D7300F7369C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 90714154245DCC61008D5294 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90C7A79224605D7300F7369C;
+			remoteInfo = ShareExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90C7A704245FEE8300F7369C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				90C7A7A024605D7300F7369C /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C7A727245FF41300F7369C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9071415C245DCC61008D5294 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +105,14 @@
 		9096CC80245F21D700AC750B /* DbHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
 		9096CC82245F303800AC750B /* ConfigMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigMap.swift; sourceTree = "<group>"; };
 		9096CC85245F39BE00AC750B /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
-		90997479245DDF6900931C1F /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		90997479245DDF6900931C1F /* ShareServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareServer.swift; sourceTree = "<group>"; };
+		90C7A76C2460125100F7369C /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
+		90C7A79324605D7300F7369C /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C7A79524605D7300F7369C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		90C7A79724605D7300F7369C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		90C7A79A24605D7300F7369C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		90C7A79C24605D7300F7369C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90C7A79D24605D7300F7369C /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +139,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90C7A79024605D7300F7369C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C7A7AC24605E2600F7369C /* SQLiteStORM in Frameworks */,
+				90C7A7AA24605E2600F7369C /* PerfectHTTPServer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -97,7 +157,9 @@
 				9071415E245DCC61008D5294 /* EasyShare */,
 				90714174245DCC62008D5294 /* EasyShareTests */,
 				9071417F245DCC62008D5294 /* EasyShareUITests */,
+				90C7A79424605D7300F7369C /* ShareExtension */,
 				9071415D245DCC61008D5294 /* Products */,
+				90C7A78524601C1800F7369C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +169,7 @@
 				9071415C245DCC61008D5294 /* EasyShare.app */,
 				90714171245DCC62008D5294 /* EasyShareTests.xctest */,
 				9071417C245DCC62008D5294 /* EasyShareUITests.xctest */,
+				90C7A79324605D7300F7369C /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,11 +177,9 @@
 		9071415E245DCC61008D5294 /* EasyShare */ = {
 			isa = PBXGroup;
 			children = (
-				9096CC84245F39AD00AC750B /* utils */,
-				9096CC72245F17AC00AC750B /* model */,
-				90997478245DDF5C00931C1F /* server */,
 				9071415F245DCC61008D5294 /* AppDelegate.swift */,
 				90714161245DCC61008D5294 /* ContentView.swift */,
+				90C7A76C2460125100F7369C /* DragView.swift */,
 				90714163245DCC62008D5294 /* Assets.xcassets */,
 				90714168245DCC62008D5294 /* Main.storyboard */,
 				9071416B245DCC62008D5294 /* Info.plist */,
@@ -154,15 +215,6 @@
 			path = EasyShareUITests;
 			sourceTree = "<group>";
 		};
-		9096CC72245F17AC00AC750B /* model */ = {
-			isa = PBXGroup;
-			children = (
-				9096CC73245F17C100AC750B /* db */,
-				9096CC82245F303800AC750B /* ConfigMap.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
 		9096CC73245F17C100AC750B /* db */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,7 +233,7 @@
 			path = dto;
 			sourceTree = "<group>";
 		};
-		9096CC84245F39AD00AC750B /* utils */ = {
+		90C7A7442460010000F7369C /* utils */ = {
 			isa = PBXGroup;
 			children = (
 				9096CC85245F39BE00AC750B /* DataUtils.swift */,
@@ -189,12 +241,35 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
-		90997478245DDF5C00931C1F /* server */ = {
+		90C7A7452460010000F7369C /* model */ = {
 			isa = PBXGroup;
 			children = (
-				90997479245DDF6900931C1F /* Server.swift */,
+				9096CC73245F17C100AC750B /* db */,
+				9096CC82245F303800AC750B /* ConfigMap.swift */,
 			);
-			path = server;
+			path = model;
+			sourceTree = "<group>";
+		};
+		90C7A78524601C1800F7369C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90C7A79424605D7300F7369C /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				90C7A7452460010000F7369C /* model */,
+				90C7A7442460010000F7369C /* utils */,
+				90997479245DDF6900931C1F /* ShareServer.swift */,
+				90C7A79524605D7300F7369C /* icon.icns */,
+				90C7A79724605D7300F7369C /* ShareViewController.swift */,
+				90C7A79924605D7300F7369C /* ShareViewController.xib */,
+				90C7A79C24605D7300F7369C /* Info.plist */,
+				90C7A79D24605D7300F7369C /* ShareExtension.entitlements */,
+			);
+			path = ShareExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,10 +282,13 @@
 				90714158245DCC61008D5294 /* Sources */,
 				90714159245DCC61008D5294 /* Frameworks */,
 				9071415A245DCC61008D5294 /* Resources */,
+				90C7A704245FEE8300F7369C /* Embed App Extensions */,
+				90C7A727245FF41300F7369C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				90C7A79F24605D7300F7369C /* PBXTargetDependency */,
 			);
 			name = EasyShare;
 			packageProductDependencies = (
@@ -257,6 +335,29 @@
 			productReference = 9071417C245DCC62008D5294 /* EasyShareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		90C7A79224605D7300F7369C /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C7A7A124605D7300F7369C /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				90C7A78F24605D7300F7369C /* Sources */,
+				90C7A79024605D7300F7369C /* Frameworks */,
+				90C7A79124605D7300F7369C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90C7A7A624605E1C00F7369C /* PBXTargetDependency */,
+				90C7A7A824605E1C00F7369C /* PBXTargetDependency */,
+			);
+			name = ShareExtension;
+			packageProductDependencies = (
+				90C7A7A924605E2600F7369C /* PerfectHTTPServer */,
+				90C7A7AB24605E2600F7369C /* SQLiteStORM */,
+			);
+			productName = ShareExtension;
+			productReference = 90C7A79324605D7300F7369C /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -277,6 +378,9 @@
 					9071417B245DCC62008D5294 = {
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 9071415B245DCC61008D5294;
+					};
+					90C7A79224605D7300F7369C = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
@@ -300,6 +404,7 @@
 				9071415B245DCC61008D5294 /* EasyShare */,
 				90714170245DCC62008D5294 /* EasyShareTests */,
 				9071417B245DCC62008D5294 /* EasyShareUITests */,
+				90C7A79224605D7300F7369C /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -329,6 +434,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90C7A79124605D7300F7369C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C7A79B24605D7300F7369C /* ShareViewController.xib in Resources */,
+				90C7A79624605D7300F7369C /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -336,14 +450,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907B97EC24605F7A00F38E15 /* ShareServer.swift in Sources */,
 				90714162245DCC61008D5294 /* ContentView.swift in Sources */,
-				9099747A245DDF6900931C1F /* Server.swift in Sources */,
-				9096CC83245F303800AC750B /* ConfigMap.swift in Sources */,
 				9096CC7A245F18B700AC750B /* ShareDTO.swift in Sources */,
 				90714160245DCC61008D5294 /* AppDelegate.swift in Sources */,
 				9096CC86245F39BE00AC750B /* DataUtils.swift in Sources */,
 				9096CC78245F18A400AC750B /* ConfigDTO.swift in Sources */,
+				90C7A7492460014000F7369C /* ConfigMap.swift in Sources */,
 				9096CC81245F21D700AC750B /* DbHelper.swift in Sources */,
+				90C7A76D2460125100F7369C /* DragView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +478,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90C7A78F24605D7300F7369C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C7A7AD24605E5500F7369C /* ConfigDTO.swift in Sources */,
+				90C7A7AE24605E5500F7369C /* ShareDTO.swift in Sources */,
+				90C7A7AF24605E5500F7369C /* DbHelper.swift in Sources */,
+				90C7A7B024605E5500F7369C /* ConfigMap.swift in Sources */,
+				90C7A7B124605E5500F7369C /* DataUtils.swift in Sources */,
+				90C7A7A424605D7F00F7369C /* ShareServer.swift in Sources */,
+				90C7A79824605D7300F7369C /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -376,6 +505,19 @@
 			target = 9071415B245DCC61008D5294 /* EasyShare */;
 			targetProxy = 9071417D245DCC62008D5294 /* PBXContainerItemProxy */;
 		};
+		90C7A79F24605D7300F7369C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90C7A79224605D7300F7369C /* ShareExtension */;
+			targetProxy = 90C7A79E24605D7300F7369C /* PBXContainerItemProxy */;
+		};
+		90C7A7A624605E1C00F7369C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 90C7A7A524605E1C00F7369C /* PerfectHTTPServer */;
+		};
+		90C7A7A824605E1C00F7369C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 90C7A7A724605E1C00F7369C /* SQLiteStORM */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -385,6 +527,14 @@
 				90714169245DCC62008D5294 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		90C7A79924605D7300F7369C /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90C7A79A24605D7300F7369C /* Base */,
+			);
+			name = ShareViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -506,6 +656,7 @@
 		90714186245DCC62008D5294 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EasyShare/EasyShare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +680,7 @@
 		90714187245DCC62008D5294 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EasyShare/EasyShare.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -633,6 +785,48 @@
 			};
 			name = Release;
 		};
+		90C7A7A224605D7300F7369C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5PYBGZXB6L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShare.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		90C7A7A324605D7300F7369C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5PYBGZXB6L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShare.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -672,6 +866,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		90C7A7A124605D7300F7369C /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90C7A7A224605D7300F7369C /* Debug */,
+				90C7A7A324605D7300F7369C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -700,6 +903,26 @@
 			productName = PerfectHTTPServer;
 		};
 		9096CC70245F14D700AC750B /* SQLiteStORM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9096CC6F245F14D700AC750B /* XCRemoteSwiftPackageReference "SQLite-StORM" */;
+			productName = SQLiteStORM;
+		};
+		90C7A7A524605E1C00F7369C /* PerfectHTTPServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 906B7532245DF6AE00662E03 /* XCRemoteSwiftPackageReference "Perfect-HTTPServer" */;
+			productName = PerfectHTTPServer;
+		};
+		90C7A7A724605E1C00F7369C /* SQLiteStORM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9096CC6F245F14D700AC750B /* XCRemoteSwiftPackageReference "SQLite-StORM" */;
+			productName = SQLiteStORM;
+		};
+		90C7A7A924605E2600F7369C /* PerfectHTTPServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 906B7532245DF6AE00662E03 /* XCRemoteSwiftPackageReference "Perfect-HTTPServer" */;
+			productName = PerfectHTTPServer;
+		};
+		90C7A7AB24605E2600F7369C /* SQLiteStORM */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9096CC6F245F14D700AC750B /* XCRemoteSwiftPackageReference "SQLite-StORM" */;
 			productName = SQLiteStORM;
