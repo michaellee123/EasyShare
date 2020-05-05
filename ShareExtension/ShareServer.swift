@@ -130,17 +130,28 @@ class ShareServer{
             
             //获取文件
             let file = File(share.path + "/" + share.name)
-            if(file.exists){
+            if(file.exists && !file.isDir){
                 do{
                     try file.open()
                     let size = file.size
                     let contentType = MimeType.forExtension(file.path.filePathExtension)
                     response.status = .ok
+                    response.isStreaming = false
                     response.setHeader(.contentType, value: contentType)
                     response.setHeader(.contentLength, value: "\(size)")
                     response.setHeader(.acceptRanges, value: "bytes")
                     response.setHeader(.contentDisposition, value: "attachment;filename=\"\(share.name)\"")
-                    try response.appendBody(bytes: file.readSomeBytes(count: size))
+                    let readSize = 50 * 1024 * 1024//每次读50m
+                    var bytes :[UInt8]
+                    repeat {
+                        do {
+                            bytes = try file.readSomeBytes(count: readSize)
+                        }catch{
+                            bytes = [UInt8]()
+                        }
+                        response.appendBody(bytes: bytes)
+                    } while bytes.count > 0
+//                    try response.appendBody(bytes: file.readSomeBytes(count: size))
                     file.close()
 //                    let handler = StaticFileHandler(documentRoot: share.path)
 //                    request.path = share.name
