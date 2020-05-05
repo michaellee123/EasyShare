@@ -136,30 +136,20 @@ class ShareServer{
                     let size = file.size
                     let contentType = MimeType.forExtension(file.path.filePathExtension)
                     response.status = .ok
-                    response.isStreaming = false
+                    response.isStreaming = true
                     response.setHeader(.contentType, value: contentType)
                     response.setHeader(.contentLength, value: "\(size)")
                     response.setHeader(.acceptRanges, value: "bytes")
                     response.setHeader(.contentDisposition, value: "attachment;filename=\"\(share.name)\"")
-                    let readSize = 50 * 1024 * 1024//每次读50m
-                    var bytes :[UInt8]
-                    repeat {
-                        do {
-                            bytes = try file.readSomeBytes(count: readSize)
-                        }catch{
-                            bytes = [UInt8]()
-                        }
-                        response.appendBody(bytes: bytes)
-                    } while bytes.count > 0
+                    self.pushBody(response: response, file: file)
 //                    try response.appendBody(bytes: file.readSomeBytes(count: size))
-                    file.close()
 //                    let handler = StaticFileHandler(documentRoot: share.path)
 //                    request.path = share.name
 //                    handler.handleRequest(request: request, response: response)
                 }catch{
                     response.setBody(string: "\(error)")
+                    response.completed()
                 }
-                response.completed()
             }else{
                 //文件不存在
                 do{
@@ -171,6 +161,30 @@ class ShareServer{
             }
         })
         
+    }
+    
+    func pushBody(response:HTTPResponse,file:File){
+        let readSize = 5 * 1024 * 1024//每次读5m
+        var bytes :[UInt8]
+        do {
+           bytes = try file.readSomeBytes(count: readSize)
+        }catch{
+           bytes = [UInt8]()
+        }
+        if(bytes.count==0){
+            file.close()
+            response.completed()
+            return
+        }
+        response.appendBody(bytes: bytes)
+        response.push(callback: { bool in
+            if(bool){
+                self.pushBody(response: response, file: file)
+            }else{
+                file.close()
+                response.completed(status: HTTPResponseStatus.gatewayTimeout)
+            }
+        })
     }
     
     func addWeb() {
