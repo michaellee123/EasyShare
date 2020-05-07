@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		906B7534245DF6AE00662E03 /* PerfectHTTPServer in Frameworks */ = {isa = PBXBuildFile; productRef = 906B7533245DF6AE00662E03 /* PerfectHTTPServer */; };
 		90714160245DCC61008D5294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9071415F245DCC61008D5294 /* AppDelegate.swift */; };
-		90714162245DCC61008D5294 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714161245DCC61008D5294 /* ContentView.swift */; };
 		90714164245DCC62008D5294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90714163245DCC62008D5294 /* Assets.xcassets */; };
 		90714167245DCC62008D5294 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90714166245DCC62008D5294 /* Preview Assets.xcassets */; };
 		9071416A245DCC62008D5294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90714168245DCC62008D5294 /* Main.storyboard */; };
@@ -35,6 +34,8 @@
 		90C7A7AF24605E5500F7369C /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC80245F21D700AC750B /* DbHelper.swift */; };
 		90C7A7B024605E5500F7369C /* ConfigMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC82245F303800AC750B /* ConfigMap.swift */; };
 		90C7A7B124605E5500F7369C /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC85245F39BE00AC750B /* DataUtils.swift */; };
+		90E808552463B6F70051447E /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E808532463B6F70051447E /* Window.swift */; };
+		90E808562463B6F70051447E /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90E808542463B6F70051447E /* Window.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +89,6 @@
 /* Begin PBXFileReference section */
 		9071415C245DCC61008D5294 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9071415F245DCC61008D5294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90714161245DCC61008D5294 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		90714163245DCC62008D5294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90714166245DCC62008D5294 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		90714169245DCC62008D5294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -113,6 +113,8 @@
 		90C7A79A24605D7300F7369C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
 		90C7A79C24605D7300F7369C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90C7A79D24605D7300F7369C /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		90E808532463B6F70051447E /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		90E808542463B6F70051447E /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				9071415F245DCC61008D5294 /* AppDelegate.swift */,
-				90714161245DCC61008D5294 /* ContentView.swift */,
+				90E808532463B6F70051447E /* Window.swift */,
+				90E808542463B6F70051447E /* Window.xib */,
 				90C7A76C2460125100F7369C /* DragView.swift */,
 				90714163245DCC62008D5294 /* Assets.xcassets */,
 				90714168245DCC62008D5294 /* Main.storyboard */,
@@ -417,6 +420,7 @@
 				9071416A245DCC62008D5294 /* Main.storyboard in Resources */,
 				90714167245DCC62008D5294 /* Preview Assets.xcassets in Resources */,
 				90714164245DCC62008D5294 /* Assets.xcassets in Resources */,
+				90E808562463B6F70051447E /* Window.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				907B97EC24605F7A00F38E15 /* ShareServer.swift in Sources */,
-				90714162245DCC61008D5294 /* ContentView.swift in Sources */,
+				90E808552463B6F70051447E /* Window.swift in Sources */,
 				9096CC7A245F18B700AC750B /* ShareDTO.swift in Sources */,
 				90714160245DCC61008D5294 /* AppDelegate.swift in Sources */,
 				9096CC86245F39BE00AC750B /* DataUtils.swift in Sources */,
@@ -590,7 +594,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -644,7 +648,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -671,7 +675,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -697,7 +702,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -804,6 +810,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShare.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -826,6 +834,8 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dog.abcd.EasyShare.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

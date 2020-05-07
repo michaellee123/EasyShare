@@ -19,7 +19,7 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
@@ -29,7 +29,22 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>NSExtensionActivationRule</key>
-			<string>TRUEPREDICATE</string>
+			<dict>
+				<key>NSExtensionActivationSupportsAttachmentsWithMaxCount</key>
+				<integer>1</integer>
+				<key>NSExtensionActivationSupportsAttachmentsWithMinCount</key>
+				<integer>0</integer>
+				<key>NSExtensionActivationSupportsFileWithMaxCount</key>
+				<integer>1</integer>
+				<key>NSExtensionActivationSupportsImageWithMaxCount</key>
+				<integer>1</integer>
+				<key>NSExtensionActivationSupportsMovieWithMaxCount</key>
+				<integer>1</integer>
+				<key>NSExtensionActivationSupportsWebPageWithMaxCount</key>
+				<integer>0</integer>
+				<key>NSExtensionActivationSupportsWebURLWithMaxCount</key>
+				<integer>0</integer>
+			</dict>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.share-services</string>
