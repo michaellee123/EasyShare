@@ -25,38 +25,60 @@ class ShareViewController: NSViewController {
 
     override func loadView() {
         super.loadView()
-        DbHelper.create()
-        ShareServer.instance.start()
         let provider = (self.extensionContext!.inputItems[0] as! NSExtensionItem).attachments?[0]
-        provider?.loadItem(forTypeIdentifier: kUTTypeFileURL as String, options: nil, completionHandler: {data,error in
-            let path = data as! NSURL
-            let file = File(path.path!)
-            if(file.exists){
-                let splits = file.path.split(separator: "/")
-                let name = splits[splits.count-1]
-                let share = ShareDTO()
-                share.name = "\(name)"
-                share.path = file.path.replacingOccurrences(of: "/\(name)", with: "")
-                share.key = DataUtils.generateKey(name: share.name)
-                do{
-                    try share.save{ id in
-                        share.id = id as! Int
-                        self.id = share.id
-                    }
-                }catch{
-                    fatalError("\(error)")
-                }
-                self.url = "http://\(self.getIFAddresses()[0]):\(ShareServer.instance.port)/api/download/\(share.key)"
-                self.urlCell.stringValue = self.url
-                self.findAllShare()
-                self.titleCell.stringValue = share.name
-                self.imageCell.image = self.generateQRCodeImage(self.url, size: NSSize(width: 288, height: 288))
+        provider?.loadItem(forTypeIdentifier: kUTTypeURL as String, options: nil, completionHandler: {data,error in
+            let url = data as! NSURL
+            let path = url.absoluteString
+            if(path!.starts(with: "file://")){
+                self.shareFile(path: url.path!)
+            }else if(path!.starts(with: "http://") || path!.starts(with: "https://")){
+                self.shareWeb(path: path!)
             }else{
                 self.extensionContext!.completeRequest(returningItems: [NSExtensionItem()], completionHandler: nil)
             }
         })
     }
 
+    func shareFile(path:String) {
+        DbHelper.create()
+        ShareServer.instance.start()
+        let file = File(path)
+        if(file.exists){
+            let splits = file.path.split(separator: "/")
+            let name = splits[splits.count-1]
+            let share = ShareDTO()
+            share.name = "\(name)"
+            share.path = file.path.replacingOccurrences(of: "/\(name)", with: "")
+            share.key = DataUtils.generateKey(name: share.name)
+            do{
+                try share.save{ id in
+                    share.id = id as! Int
+                    self.id = share.id
+                }
+            }catch{
+                fatalError("\(error)")
+            }
+            self.findAllShare()
+            self.showWindowInfo(
+                url: "http://\(self.getIFAddresses()[0]):\(ShareServer.instance.port)/api/download/\(share.key)",
+                title: share.name
+            )
+        }else{
+            self.extensionContext!.completeRequest(returningItems: [NSExtensionItem()], completionHandler: nil)
+        }
+    }
+    
+    func shareWeb(path:String){
+        self.showWindowInfo(url: path, title: "我是真的不知道Title怎么获取😅👌")
+    }
+    
+    func showWindowInfo(url:String,title:String) {
+        self.url = url
+        self.urlCell.stringValue = url
+        self.titleCell.stringValue = title
+        self.imageCell.image = self.generateQRCodeImage(self.url, size: NSSize(width: 600, height: 600))
+    }
+    
     @IBAction func copy(_ sender: NSButton) {
         let pasteboard = NSPasteboard.general
         pasteboard.declareTypes([NSPasteboard.PasteboardType.string], owner: nil)
@@ -73,12 +95,7 @@ class ShareViewController: NSViewController {
         }catch{
             NSLog("\(error)")
         }
-        let outputItem = NSExtensionItem()
-        // Complete implementation by setting the appropriate value on the output item
-    
-        let outputItems = [outputItem]
-        self.extensionContext!.completeRequest(returningItems: outputItems, completionHandler: nil)
-        
+        self.extensionContext!.completeRequest(returningItems: [NSExtensionItem()], completionHandler: nil)
     }
 
     func generateQRCodeImage(_ content: String, size: NSSize) -> NSImage?{
@@ -86,6 +103,9 @@ class ShareViewController: NSViewController {
         guard let filter = CIFilter(name: "CIQRCodeGenerator") else {return nil}
         // 还原滤镜的默认属性
         filter.setDefaults()
+        //1.3 设置生成的二维码的容错率
+        //value = @"L/M/Q/H"
+        filter.setValue("L", forKey: "inputCorrectionLevel")
         // 设置需要生成的二维码数据
         let contentData = content.data(using: String.Encoding.utf8)
         filter.setValue(contentData, forKey: "inputMessage")
