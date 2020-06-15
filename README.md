@@ -1,6 +1,8 @@
 # EasyShare   [简体中文](README_zh.md)
 Easy Share File From Mac To Every Devices
 
+ ![ESlogo的副本@0,5x.png](./EasyShare/Assets.xcassets/AppIcon.appiconset/ESlogo的副本@0,5x.png)
+
 ## Install
 
 Download release package and unzip, copy EasyShare.app into Applications dir. This app is only some tips.
