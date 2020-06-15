@@ -1,8 +1,6 @@
 # EasyShare
 非常简单的从你的Mac分享文件到任何设备
 
-![ESlogo的副本@0,5x.png](./EasyShare/Assets.xcassets/AppIcon.appiconset/ESlogo的副本@0,5x.png)
-
 ## 安装
 
 下载release里面的文件，并且解压，把EaseShare.app拖进应用目录。这个app打开之后只有一些提示。
@@ -21,4 +19,14 @@
 
 在下载完成之前不要点`完成`按钮，否则会断开链接。
 
-完事儿，就这么简单
+完事儿，就这么简单。
+
+## 一些新东西
+
+我发现可以在Safari和其他的浏览器里面使用macOS的`ShareExtension`，所以，现在可以使用`EasyShare`来生成二维码，使用手机扫码就可以访问这个网页了。只需要点击Safari右上角的按钮，在选择`EasyShare`就可以了。像这样。
+
+![WX20200615-235553@2x.png](WX20200615-235553@2x.png)
+
+![WX20200615-235713@2x.png](WX20200615-235713@2x.png)
+
+但是我实在不知道怎么获取网页的标题, 并且苹果也没有提供文档。所以就这样吧。 😂

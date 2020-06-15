@@ -1,13 +1,11 @@
 # EasyShare   [简体中文](README_zh.md)
 Easy Share File From Mac To Every Devices
 
-![ESlogo的副本@0,5x.png](./EasyShare/Assets.xcassets/AppIcon.appiconset/ESlogo的副本@0,5x.png)
-
 ## Install
 
 Download release package and unzip, copy EasyShare.app into Applications dir. This app is only some tips.
 
-Open System Preferences -> Extensions -> Share Menu, and select EasyShare. 
+Open System Preferences -> Extensions -> Share Menu, and select EasyShare.
 
 ## Use
 
@@ -26,3 +24,13 @@ That's all, everything is so easy!
 ## For Pro Man
 
 The default http port is 12580, if you want to change it, you can search `EasyShare.sqlite` and change something.
+
+## Something New
+
+I found masOS's `ShareExtension` can used in Safari and other browers. So you can share web page by `EasyShare` now. Just click right-top button in Safari, and select `EasyShare`, you will got a QRCode, then you can scan to visit this web page in your smartphone. Like this.
+
+![WX20200615-235553@2x.png](WX20200615-235553@2x.png)
+
+![WX20200615-235713@2x.png](WX20200615-235713@2x.png)
+
+But I don't kown how to get the web page's title, and Apple provide no document. So, let it be. haha :)
