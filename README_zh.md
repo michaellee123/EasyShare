@@ -1,6 +1,8 @@
 # EasyShare
 非常简单的从你的Mac分享文件到任何设备
 
+ ![ESlogo的副本@0,5x.png](./EasyShare/Assets.xcassets/AppIcon.appiconset/ESlogo的副本@0,5x.png)
+
 ## 安装
 
 下载release里面的文件，并且解压，把EaseShare.app拖进应用目录。这个app打开之后只有一些提示。
