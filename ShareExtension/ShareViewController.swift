@@ -25,9 +25,15 @@ class ShareViewController: NSViewController {
 
     override func loadView() {
         super.loadView()
-        let provider = (self.extensionContext!.inputItems[0] as! NSExtensionItem).attachments?[0]
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let item = self.extensionContext!.inputItems[0] as! NSExtensionItem
+        let provider = item.attachments?[0]
         provider?.loadItem(forTypeIdentifier: kUTTypeURL as String, options: nil, completionHandler: {data,error in
-            let url = data as! NSURL
+            let nsData = data as! NSData
+            let url = NSURL(dataRepresentation: nsData as Data, relativeTo: nil)
             let path = url.absoluteString
             if(path!.starts(with: "file://")){
                 self.shareFile(path: url.path!)
