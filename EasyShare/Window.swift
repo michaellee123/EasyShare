@@ -13,5 +13,7 @@ import SwiftUI
 class Window :NSWindowController{
     override func windowDidLoad() {
         super.windowDidLoad()
+//        self.window?.titleVisibility = NSWindow.TitleVisibility.hidden
+//        self.window?.titlebarAppearsTransparent = true
     }
 }

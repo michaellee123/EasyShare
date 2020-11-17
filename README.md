@@ -1,7 +1,7 @@
 # EasyShare   [简体中文](README_zh.md)
 Easy Share File From Mac To Every Devices
 
- ![ESlogo的副本@0,5x.png](./EasyShare/Assets.xcassets/AppIcon.appiconset/ESlogo的副本@0,5x.png)
+ ![logo.png](logo.png)
 
 ## Install
 

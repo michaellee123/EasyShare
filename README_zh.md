@@ -1,7 +1,7 @@
 # EasyShare
 非常简单的从你的Mac分享文件到任何设备
 
- ![ESlogo的副本@0,5x.png](./EasyShare/Assets.xcassets/AppIcon.appiconset/ESlogo的副本@0,5x.png)
+ ![logo.png](logo.png)
 
 ## 安装
 
