@@ -15,11 +15,13 @@
 		90714176245DCC62008D5294 /* EasyShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714175245DCC62008D5294 /* EasyShareTests.swift */; };
 		90714181245DCC62008D5294 /* EasyShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90714180245DCC62008D5294 /* EasyShareUITests.swift */; };
 		907B97EC24605F7A00F38E15 /* ShareServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90997479245DDF6900931C1F /* ShareServer.swift */; };
+		908DB5332574C6A8008AF55D /* ESlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 908DB5322574C6A8008AF55D /* ESlogo.png */; };
 		9096CC71245F14D700AC750B /* SQLiteStORM in Frameworks */ = {isa = PBXBuildFile; productRef = 9096CC70245F14D700AC750B /* SQLiteStORM */; };
 		9096CC78245F18A400AC750B /* ConfigDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC77245F18A400AC750B /* ConfigDTO.swift */; };
 		9096CC7A245F18B700AC750B /* ShareDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC79245F18B700AC750B /* ShareDTO.swift */; };
 		9096CC81245F21D700AC750B /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC80245F21D700AC750B /* DbHelper.swift */; };
 		9096CC86245F39BE00AC750B /* DataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC85245F39BE00AC750B /* DataUtils.swift */; };
+		909CBEA42564C3C40046DA74 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 909CBEA32564C3C40046DA74 /* index.html */; };
 		90C7A7492460014000F7369C /* ConfigMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9096CC82245F303800AC750B /* ConfigMap.swift */; };
 		90C7A76D2460125100F7369C /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7A76C2460125100F7369C /* DragView.swift */; };
 		90C7A79624605D7300F7369C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 90C7A79524605D7300F7369C /* icon.icns */; };
@@ -100,12 +102,14 @@
 		9071417C245DCC62008D5294 /* EasyShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90714180245DCC62008D5294 /* EasyShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyShareUITests.swift; sourceTree = "<group>"; };
 		90714182245DCC62008D5294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		908DB5322574C6A8008AF55D /* ESlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ESlogo.png; sourceTree = "<group>"; };
 		9096CC77245F18A400AC750B /* ConfigDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDTO.swift; sourceTree = "<group>"; };
 		9096CC79245F18B700AC750B /* ShareDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareDTO.swift; sourceTree = "<group>"; };
 		9096CC80245F21D700AC750B /* DbHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
 		9096CC82245F303800AC750B /* ConfigMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigMap.swift; sourceTree = "<group>"; };
 		9096CC85245F39BE00AC750B /* DataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtils.swift; sourceTree = "<group>"; };
 		90997479245DDF6900931C1F /* ShareServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareServer.swift; sourceTree = "<group>"; };
+		909CBEA32564C3C40046DA74 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		90C7A76C2460125100F7369C /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
 		90C7A79324605D7300F7369C /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C7A79524605D7300F7369C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
@@ -218,6 +222,15 @@
 			path = EasyShareUITests;
 			sourceTree = "<group>";
 		};
+		908DB5372574C8E0008AF55D /* wwwroot */ = {
+			isa = PBXGroup;
+			children = (
+				908DB5322574C6A8008AF55D /* ESlogo.png */,
+				909CBEA32564C3C40046DA74 /* index.html */,
+			);
+			path = wwwroot;
+			sourceTree = "<group>";
+		};
 		9096CC73245F17C100AC750B /* db */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +247,14 @@
 				9096CC79245F18B700AC750B /* ShareDTO.swift */,
 			);
 			path = dto;
+			sourceTree = "<group>";
+		};
+		909CBEA22564C35C0046DA74 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				908DB5372574C8E0008AF55D /* wwwroot */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		90C7A7442460010000F7369C /* utils */ = {
@@ -263,6 +284,7 @@
 		90C7A79424605D7300F7369C /* ShareExtension */ = {
 			isa = PBXGroup;
 			children = (
+				909CBEA22564C35C0046DA74 /* Resource */,
 				90C7A7452460010000F7369C /* model */,
 				90C7A7442460010000F7369C /* utils */,
 				90997479245DDF6900931C1F /* ShareServer.swift */,
@@ -442,7 +464,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				909CBEA42564C3C40046DA74 /* index.html in Resources */,
 				90C7A79B24605D7300F7369C /* ShareViewController.xib in Resources */,
+				908DB5332574C6A8008AF55D /* ESlogo.png in Resources */,
 				90C7A79624605D7300F7369C /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -827,7 +851,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtensionRelease.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

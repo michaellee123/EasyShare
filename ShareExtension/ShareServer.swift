@@ -10,6 +10,7 @@ import Foundation
 import PerfectHTTP
 import PerfectLib
 import PerfectHTTPServer
+import Cocoa
 
 class ShareServer{
 
@@ -154,12 +155,31 @@ class ShareServer{
                 //文件不存在
                 do{
                     try response.setBody(json: self.createResponseBody(code: 404, message: "file not exists", data: nil))
-                }catch{
+                } catch {
                     response.setBody(string: "\(error)")
                 }
                 response.completed()
             }
         })
+        
+        api.add(method: .post, uri: "/upload/{key}"){request,response in
+            if let uploads = request.postFileUploads, uploads.count > 0 {
+                for upload in uploads{
+                    let file = File(upload.tmpFileName)
+                    do{
+                        try file.moveTo(path: "/Users/michaellee/Desktop/upload/"+upload.fileName,overWrite: true)
+                    } catch {
+                        print("\(error)")
+                    }
+                }
+                do {
+                    try response.setBody(json: self.createResponseBody(code: 200, message: "上传成功", data: nil))
+                } catch {
+                    response.setBody(string: "\(error)")
+                }
+            }
+            response.completed()
+        }
         
     }
     
@@ -188,6 +208,12 @@ class ShareServer{
     }
     
     func addWeb() {
+        web.add(method: .get, uri: "/**"){request,response in
+            request.path = request.urlVariables[routeTrailingWildcardKey]!
+            //allowResponseFilters=true 才能够访问
+            let handler = StaticFileHandler(documentRoot: Bundle.main.resourcePath! , allowResponseFilters: true)
+            handler.handleRequest(request: request, response: response)
+        }
     }
     
     func createResponseBody(code:Int,message:String,data:Any?) -> [String:Any] {
