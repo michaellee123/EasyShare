@@ -36,3 +36,7 @@ I found masOS's `ShareExtension` can used in Safari and other browers. So you ca
 ![WX20200615-235713@2x.png](WX20200615-235713@2x.png)
 
 But I don't kown how to get the web page's title, and Apple provide no document. So, let it be. haha :)
+
+## One More Thing
+
+There is a way to send a file from Android to Mac, [Check here for download `AndDrop`](https://play.google.com/store/apps/details?id=com.neure.anddrop).
