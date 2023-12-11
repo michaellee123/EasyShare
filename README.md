@@ -40,3 +40,5 @@ But I don't kown how to get the web page's title, and Apple provide no document.
 ## One More Thing
 
 There is a way to send a file from Android to Mac, [Check here for download `AndDrop`](https://play.google.com/store/apps/details?id=com.neure.anddrop).
+
+[![Buy me a coffee](https://storage.ko-fi.com/cdn/generated/zfskfgqnf/rest-44b9f406d764e57b710bffe31a346b33-tcf2mnas.jpg)](https://ko-fi.com/michaellee123)
